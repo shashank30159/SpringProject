@@ -11,6 +11,12 @@
 		<property name="dept" value="developer"></property>
 		<property name="address" ref="ad"></property> 
 	</bean>
+	<bean id="p" class="com.vm.entity.Product">
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="mobile"></constructor-arg>
+		<constructor-arg value="Electrnics"></constructor-arg>
+
+</bean>
 		
 		
 <bean id="ad" class="com.vm.entity.Address">

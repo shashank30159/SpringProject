@@ -7,6 +7,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
 import com.vm.entity.Employee;
+import com.vm.entity.Product;
 
 
 public class AppClient {
@@ -16,7 +17,10 @@ public class AppClient {
 	    BeanFactory factory=new XmlBeanFactory(resource); 
 	    
 	    Employee employee=(Employee)factory.getBean("emp");
-	    employee.displayEmployeeInfo(); 
+	    employee.displayEmployeeInfo();
+	    
+	    Product product=(Product)factory.getBean("p");
+	    System.out.println(product);
 	    
 	}
 
