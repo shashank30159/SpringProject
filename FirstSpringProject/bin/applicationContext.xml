@@ -5,13 +5,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="emp" class="com.vm.entity.Employee">
+	<bean id="employees" class="com.vm.entity.Employee">
 		<property name="id" value="1"></property>
 		<property name="name" value="john"></property>
 		<property name="dept" value="developer"></property>
 		<property name="address" ref="ad"></property> 
 	</bean>
-	<bean id="p" class="com.vm.entity.Product">
+	<bean id="products" class="com.vm.entity.Product">
 		<constructor-arg value="1"></constructor-arg>
 		<constructor-arg value="mobile"></constructor-arg>
 		<constructor-arg value="Electrnics"></constructor-arg>

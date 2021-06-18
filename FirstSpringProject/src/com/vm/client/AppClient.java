@@ -13,13 +13,13 @@ import com.vm.entity.Product;
 public class AppClient {
 
 	public static void main(String[] args) {
-		Resource resource=new ClassPathResource("applicationContext.xml");  
-	    BeanFactory factory=new XmlBeanFactory(resource); 
+		Resource resource = new ClassPathResource("applicationContext.xml");  
+	    BeanFactory factory = new XmlBeanFactory(resource); 
 	    
-	    Employee employee=(Employee)factory.getBean("emp");
+	    Employee employee = (Employee)factory.getBean("employees");
 	    employee.displayEmployeeInfo();
 	    
-	    Product product=(Product)factory.getBean("p");
+	    Product product = (Product)factory.getBean("products");
 	    System.out.println(product);
 	    
 	}
